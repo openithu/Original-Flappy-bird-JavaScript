@@ -12,19 +12,38 @@ sprite.src = "img/sprite.png";
 
 // LOAD SOUNDS
 const SCORE_S = new Audio();
-SCORE_S.src = "audio/sfx_point.wav";
+SCORE_S.src = "audio/pipe_sound.caf.wav";
 
 const FLAP = new Audio();
-FLAP.src = "audio/sfx_flap.wav";
+FLAP.src = "audio/Jump34.caf.wav";
 
 const HIT = new Audio();
-HIT.src = "audio/sfx_hit.wav";
+HIT.src = "audio/die.caf.wav";
 
 const SWOOSHING = new Audio();
 SWOOSHING.src = "audio/sfx_swooshing.wav";
 
+const fart1 = new Audio();
+fart1.src = "audio/fart_1.caf.wav";
+const fart2 = new Audio();
+fart2.src = "audio/fart_2.caf.wav";
+const fart3 = new Audio();
+fart3.src = "audio/fart_3.caf.wav";
+const fart4 = new Audio();
+fart4.src = "audio/fart_4.caf.wav";
+const fart5 = new Audio();
+fart5.src = "audio/fart_5.caf.wav";
+const fart6 = new Audio();
+fart6.src = "audio/fart_6.caf.wav";
+const fart7 = new Audio();
+fart7.src = "audio/fart_7.caf.wav";
+const fart8 = new Audio();
+fart8.src = "audio/fart_8.caf.wav";
+
+farts = new Array(fart1, fart2, fart3, fart4, fart5, fart6, fart7, fart8);
+
 const DIE = new Audio();
-DIE.src = "audio/sfx_die.wav";
+DIE.src = "audio/final_fart.caf.wav";
 
 // GAME STATE
 const state = {
