@@ -72,7 +72,8 @@ cvs.addEventListener("click", function(evt){
         case state.game:
             if(bird.y - bird.radius <= 0) return;
             bird.flap();
-            farts[fart_index++].play();
+            farts[fart_index].play();
+            fart_index += 1;
             if (fart_index > 7) {
                 fart_index = 0;
             }
