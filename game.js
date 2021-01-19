@@ -41,6 +41,7 @@ const fart8 = new Audio();
 fart8.src = "audio/fart_8.caf.wav";
 
 farts = new Array(fart1, fart2, fart3, fart4, fart5, fart6, fart7, fart8);
+fart_index = 0;
 
 const DIE = new Audio();
 DIE.src = "audio/final_fart.caf.wav";
@@ -71,7 +72,10 @@ cvs.addEventListener("click", function(evt){
         case state.game:
             if(bird.y - bird.radius <= 0) return;
             bird.flap();
-            farts[0].play();
+            farts[fart_index++].play();
+            if (fart_index > 7) {
+                fart_index = 0;
+            }
             break;
         case state.over:
             let rect = cvs.getBoundingClientRect();
