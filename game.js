@@ -41,7 +41,7 @@ const fart8 = new Audio();
 fart8.src = "audio/fart_8.caf.wav";
 
 farts = new Array(fart1, fart2, fart3, fart4, fart5, fart6, fart7, fart8);
-fart_index = 0;
+var fart_index = 0;
 
 const DIE = new Audio();
 DIE.src = "audio/final_fart.caf.wav";
