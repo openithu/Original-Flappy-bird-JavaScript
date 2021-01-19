@@ -71,7 +71,7 @@ cvs.addEventListener("click", function(evt){
         case state.game:
             if(bird.y - bird.radius <= 0) return;
             bird.flap();
-            FLAP.play();
+            farts[0].play();
             break;
         case state.over:
             let rect = cvs.getBoundingClientRect();
